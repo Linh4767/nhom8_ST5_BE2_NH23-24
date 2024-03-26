@@ -157,9 +157,9 @@
                                 <li>
                                     <a href="single-product.html" class="dropdown-item">Single Product</a>
                                 </li> -->
-                                <li>
-                                    <a href="contact.html" class="dropdown-item">Contact</a>
-                                </li>
+                                <!-- <li>
+                                    <a href="#" class="dropdown-item">Contact</a>
+                                </li> -->
                             </ul>
                         </li>
                         <li class="nav-item">
