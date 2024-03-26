@@ -21,11 +21,11 @@ use App\Http\Controllers\PhotoController;
 
 Route::get("/{name?}",function($name = "index"){
     return view(@$name);
-});
+})->name('page');
 
-Route::get("crud", function(){
-    return view('crud');
-});
-// Route::get("/login",function(){
+// Route::get("crud", function(){
+//     return view('crud');
+// });
+// // Route::get("/login",function(){
 //     return view("login");
 // });
