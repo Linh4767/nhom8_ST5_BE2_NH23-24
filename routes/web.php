@@ -23,6 +23,9 @@ Route::get("/{name?}",function($name = "index"){
     return view(@$name);
 });
 
+Route::get("crud", function(){
+    return view('crud');
+});
 // Route::get("/login",function(){
 //     return view("login");
 // });
