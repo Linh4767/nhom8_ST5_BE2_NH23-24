@@ -15,9 +15,10 @@ use App\Http\Controllers\PhotoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::get('admin/{age}', function(string $age){
-//     return "Ban du tuoi truy cap trang nay";
-// })->whereNumber('age')->middleware('checkage');
 Route::get("/",function(){
     return view("index");
+});
+
+Route::get("/login",function(){
+    return view("login");
 });
