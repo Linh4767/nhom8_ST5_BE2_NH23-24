@@ -15,10 +15,14 @@ use App\Http\Controllers\PhotoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get("/",function(){
-    return view("index");
+// Route::get("/",function(){
+//     return view("index");
+// });
+
+Route::get("/{name?}",function($name = "index"){
+    return view(@$name);
 });
 
-Route::get("/login",function(){
-    return view("login");
-});
+// Route::get("/login",function(){
+//     return view("login");
+// });
