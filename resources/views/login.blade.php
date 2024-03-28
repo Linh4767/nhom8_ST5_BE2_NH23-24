@@ -18,6 +18,7 @@
                 <input type="email" name="email" placeholder="Email" required="">
                 <input type="password" name="pswd" placeholder="Password" required="">
                 <button>Sign up</button>
+                <center><a href=" {{ url('/index')}}" style="color: white; text-decoration: none;">Back to Shop </a></center>
             </form>
         </div>
 
@@ -28,8 +29,10 @@
                 <input type="password" name="pswd" placeholder="Password" required="">
                 <button>Login</button>
             </form>
-        </div>
+        </div>   
+        
     </div>
-</body>
 
+</body>
+    
 </html>

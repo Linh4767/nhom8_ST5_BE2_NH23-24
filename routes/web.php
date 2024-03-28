@@ -3,8 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\SignUp;
-use App\Http\Controllers\PhotoController;
-
+use App\Http\Controllers\PageControl;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,9 +18,9 @@ use App\Http\Controllers\PhotoController;
 //     return view("index");
 // });
 
-Route::get("/{name?}",function($name = "index"){
-    return view(@$name);
-})->name('page');
+//Route::get("/{name?}",function($name = "index"){
+//    return view(@$name);
+//})->name('page');
 
 // Route::get("crud", function(){
 //     return view('crud');
@@ -29,3 +28,5 @@ Route::get("/{name?}",function($name = "index"){
 // // Route::get("/login",function(){
 //     return view("login");
 // });
+
+Route::get("/{name?}",[PageControl::class,'page'])->name('page');

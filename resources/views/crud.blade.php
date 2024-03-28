@@ -24,8 +24,8 @@
 </head>
 
 <body>
-	@include('nav')
-
+	@extends('nav')
+    @section('navbar')
 	<!-- Product section-->
 	<section class="py-5">
 		<div class="container px-4 px-lg-5 my-5">
@@ -261,7 +261,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->
 	<script src="js/scripts.js"></script>
-
+	@endsection
 </body>
 
 </html>
